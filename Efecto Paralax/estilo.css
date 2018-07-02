@@ -1,0 +1,125 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+   height: 130%;
+   width: 100%;
+   padding: 0;
+   position: relative;
+   color: #FFF;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+
+   align-items: center;
+   text-align: center;
+}
+
+
+.parallax{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    animation: movimiento 15s infinite alternate;
+}
+
+#seccion1{
+    background-image: url('Imagenes/imagen1.jpeg');
+    background-size: 200%;
+}
+
+#seccion2 {
+    background-image: url('Imagenes/imagen2.jpeg');
+    background-size: 200%;
+}
+
+#seccion3 {
+    background-image: url('Imagenes/imagen3.jpeg');
+    background-size: 200%;
+}
+
+#seccion4 {
+    background-image: url('Imagenes/imagen4.jpeg');
+    background-size: 200%;
+}
+
+@keyframes movimiento {
+    from {
+        background-position: bottom left;
+    }
+    to {
+        background-position: top right;
+    }
+}
+
+.capa-gradient1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: -webkit-linear-gradient(left, blue, red);
+    opacity: 0.5;
+}
+
+.capa-gradient3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: -webkit-linear-gradient(bottom, rgb(153, 6, 121), #00E5FF);
+    opacity: 0.5;
+}
+
+.capa-gradient2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: -webkit-linear-gradient(right, rgb(22, 2, 59), #FF5722);
+    opacity: 0.5;
+}
+
+.capa-gradient4 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: -webkit-linear-gradient(top, #F50057, #2c3e50);
+    opacity: 0.5;
+}
+
+.detalles {
+    width: 100%;
+    position: absolute;
+}
+
+.detalles h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.detalles img {
+    width: 500px;
+    height: 350px;
+}
+
+.detalles p {
+    font-size: 20px;
+}
+
+.detalles button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: none;
+    border-style: none;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: background 300ms;
+    cursor: pointer;
+}
+
+.detalles button:hover {
+    background: #fff;
+    color: #000;
+}
+

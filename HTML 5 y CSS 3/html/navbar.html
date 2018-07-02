@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    
+</head>
+<body>
+    <nav>
+        <button class="nav-boton" onclick="activar()">Menú</button>
+        <a href="#" class="nav-enlace ocultar">Inicio</a>
+        <a href="#" class="nav-enlace ocultar"> Nosotros</a>
+        <a href="#" class="nav-enlace ocultar">Servicios</a>
+        <a href="#" class="nav-enlace ocultar">Contactos</a>
+    </nav>
+
+    <script>
+        function activar() {
+            var enlace = document.getElementsByClassName('nav-enlace');
+            for(var i = 0; i<enlace.length; i++){
+                enlace[i].classList.toggle('ocultar');
+            }  
+        }
+    </script>
+
+</body>
+</html>

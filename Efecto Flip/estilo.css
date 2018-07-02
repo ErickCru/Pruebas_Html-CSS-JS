@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wrap{
+    width: 1110px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta-wrap{
+    margin: 10px;
+    -webkit-perspective: 800;
+    perspective: 800;
+}
+
+.tarjeta{
+    width: 300px;
+    height: 350px;
+    background: #f4f;
+    position: relative;
+    transform-style: preserve-3d;
+    -webkit-transition: .7s ease;
+    transition: .7s ease;
+    -webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+}
+
+.adelante,
+.atras {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.atras{
+    transform: rotateY(180deg);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: #FFF;
+    background: #f4f;
+}
+
+.adelante{
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    color: #FFF;
+}
+
+.tarjeta:hover  {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.card1{
+    background-image: url(imagenes/1.jpg); 
+}
+
+.card2{
+    background-image: url(imagenes/2.jpeg);
+}
+
+.card3{
+    background-image: url(imagenes/3.jpg);
+}
+
+

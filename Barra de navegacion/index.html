@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Barra navegación</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Song+Myung" rel="stylesheet"> 
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+        $(window).on('scroll',function(){
+            if($(window).scrollTop()){
+                $('nav').addClass('black');
+            }
+            else{
+                $('nav').removeClass('black');
+            }
+        })
+        $(document).ready(function(){
+            $('.menu i').click(function(){
+                $('nav ul').toggleClass('active');
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="responsive-bar">
+        <div class="logo">
+            <img src="Imagenes/logo.jpg" alt="">
+        </div>
+        <div class="menu">
+            <i class="material-icons">
+                menu
+            </i>
+        </div>
+    </div>
+    <nav>
+        <div class="logo">
+            <img src="Imagenes/logo.jpg" alt="">
+        </div>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Acerca</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Portafolio</a></li>
+            <li><a href="#">Equipo</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <section class="sec1"></section>
+    <section class="contenedor">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim placeat, praesentium provident reiciendis maxime beatae molestiae magni doloremque sunt, vel ipsum, quas totam quia. Consequatur iusto temporibus voluptates ex labore?
+            Aut consectetur nam pariatur, velit veritatis aliquid quod voluptate qui dicta, beatae delectus, aliquam eos veniam molestias corporis voluptatem dignissimos culpa? Error tenetur quis beatae alias atque, magnam vero! Eum.
+            Neque voluptatibus illo est doloremque, quaerat saepe id aliquid a architecto unde iure cum molestiae fuga explicabo amet molestias, mollitia illum. Tempore deleniti sint, quae necessitatibus aperiam architecto culpa temporibus!
+            Exercitationem, quam reiciendis! Porro cum odit beatae rerum recusandae? Fugit saepe molestiae omnis rerum? Neque debitis libero ipsum corporis consectetur doloremque culpa vitae modi impedit rem! Quisquam obcaecati aut totam!
+            Similique quos aperiam consequatur reiciendis cupiditate suscipit? Fugiat corporis temporibus, mollitia vero nihil enim, voluptatum minima a suscipit nulla repudiandae facilis culpa libero, id dolores sed! Quos, provident. Sequi, alias.
+        </p>
+    </section>
+    <section class="sec2"></section>
+     <section class="contenedor">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim placeat, praesentium provident reiciendis maxime beatae molestiae magni doloremque sunt, vel ipsum, quas totam quia. Consequatur iusto temporibus voluptates ex labore?
+            Aut consectetur nam pariatur, velit veritatis aliquid quod voluptate qui dicta, beatae delectus, aliquam eos veniam molestias corporis voluptatem dignissimos culpa? Error tenetur quis beatae alias atque, magnam vero! Eum.
+            Neque voluptatibus illo est doloremque, quaerat saepe id aliquid a architecto unde iure cum molestiae fuga explicabo amet molestias, mollitia illum. Tempore deleniti sint, quae necessitatibus aperiam architecto culpa temporibus!
+            Exercitationem, quam reiciendis! Porro cum odit beatae rerum recusandae? Fugit saepe molestiae omnis rerum? Neque debitis libero ipsum corporis consectetur doloremque culpa vitae modi impedit rem! Quisquam obcaecati aut totam!
+            Similique quos aperiam consequatur reiciendis cupiditate suscipit? Fugiat corporis temporibus, mollitia vero nihil enim, voluptatum minima a suscipit nulla repudiandae facilis culpa libero, id dolores sed! Quos, provident. Sequi, alias.
+        </p>
+    </section>
+    <section class="sec3"></section>
+
+</body>
+</html>
