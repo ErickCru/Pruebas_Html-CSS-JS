@@ -20,7 +20,7 @@ var mm = {
         }
         setTimeout(function(){
            pm.zona.style.height = pm.figuras[0].childNodes[0].height + "px";    
-        }, 100);
+        }, 150);
         
     },
     movimientoMouse: function(mouse){

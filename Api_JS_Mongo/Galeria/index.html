@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Efecto con el mause</title>
+    <title>Efecto de movimiento con el Scroll</title>
     <link rel="icon" href="img/icono.jpg">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+
+    <section id="fotoFondo"></section>
     
     <div class="content-fluid">
 
-        <header class="row">
+        <header id="header" class="row">
 
             <figure id="logotipo" class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
                 <img src="img/logotipo.png" alt="">
@@ -25,12 +27,12 @@
 
             <nav class="col-lg-6 col-md-7 col-sm-8 col-xs-12">
                 <ul>
-                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#">Boton 1</a></li>
-                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#">Boton 2</a></li>
-                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#">Boton 3</a></li>
-                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#">Boton 4</a></li>
-                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#">Boton 5</a></li>
-                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#">Boton 6</a></li>
+                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#header">Inicio</a></li>
+                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#inicioGaleria">Galería</a></li>
+                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#inicioMouse">Mouse</a></li>
+                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#inicioScroll">Scroll</a></li>
+                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#">Formulario</a></li>
+                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#">Angular</a></li>
                 </ul>
             </nav>
 
@@ -99,6 +101,13 @@
         </div>
 
         <!-- Galeria -->
+        <h1 id="inicioGaleria" class="row titulos">
+
+            <hr>
+            GALERIA DE IMÁGENES
+            <hr>
+
+        </h1>
         <div id="galeria" class="row">
             <ul>
                 <li class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
@@ -141,16 +150,162 @@
         </div>
 
         <!-- Efecto de mouse -->
+        <h1 id="inicioMouse" class="row titulos">
+        
+            <hr> 
+            MOVIMIENTO CON EL MOUSE
+            <hr>
+        
+        </h1>
+
         <div id="efectoMouse" class="row">
             <figure></figure>
             <figure></figure>
             <figure></figure>
             <figure></figure>
         </div>
+
+        <!-- Efecto de Scroll -->
+        <h1 id="inicioScroll" class="row titulos">
+        
+            <hr> 
+            EFECTOS CON EL SCROLL
+            <hr>
+        
+        </h1>
+        <div id="scroll">
+
+            <!-- Articulo 1 -->
+            <article class="row">
+                <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0">
+                    <br>
+
+                </div>
+
+                <aside class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
+                    
+                    <figure class="col-lg-3 col-md-5 col-sm-6 col-xs-12">
+                        <img src="img/galeria/2.png" alt="">
+                    </figure>
+
+                    <div class="col-lg-9 col-md-7 col-sm-6 col-xs-12">
+
+                        <h1>Lorem, ipsum.</h1>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dignissimos!</p>
+
+                        <button>Leer Más</button>
+
+                    </div>
+
+                </aside>
+
+                <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0">
+                    <br>
+
+                </div>
+            </article>
+
+            <!-- Articulo 2 -->
+            <article class="row">
+                <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0">
+                    <br>
+            
+                </div>
+            
+                <aside class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
+            
+                    <figure class="col-lg-3 col-md-5 col-sm-6 col-xs-12">
+                        <img src="img/galeria/3.png" alt="">
+                    </figure>
+            
+                    <div class="col-lg-9 col-md-7 col-sm-6 col-xs-12">
+            
+                        <h1>Lorem, ipsum.</h1>
+            
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dignissimos!</p>
+            
+                        <button>Leer Más</button>
+            
+                    </div>
+            
+                </aside>
+            
+                <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0">
+                    <br>
+            
+                </div>
+            </article>
+
+            <!-- Articulo 3 -->
+            <article class="row">
+                <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0">
+                    <br>
+            
+                </div>
+            
+                <aside class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
+            
+                    <figure class="col-lg-3 col-md-5 col-sm-6 col-xs-12">
+                        <img src="img/galeria/4.png" alt="">
+                    </figure>
+            
+                    <div class="col-lg-9 col-md-7 col-sm-6 col-xs-12">
+            
+                        <h1>Lorem, ipsum.</h1>
+            
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dignissimos!</p>
+            
+                        <button>Leer Más</button>
+            
+                    </div>
+            
+                </aside>
+            
+                <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0">
+                    <br>
+            
+                </div>
+            </article>
+
+            <!-- Articulo 4 -->
+            <article class="row">
+                <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0">
+                    <br>
+            
+                </div>
+            
+                <aside class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
+            
+                    <figure class="col-lg-3 col-md-5 col-sm-6 col-xs-12">
+                        <img src="img/galeria/5.jpg" alt="">
+                    </figure>
+            
+                    <div class="col-lg-9 col-md-7 col-sm-6 col-xs-12">
+            
+                        <h1>Lorem, ipsum.</h1>
+            
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dignissimos!</p>
+            
+                        <button>Leer Más</button>
+            
+                    </div>
+            
+                </aside>
+            
+                <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0">
+                    <br>
+            
+                </div>
+            </article>
+
+        </div>
+
     </div>
 
     <script src="JS/slide.min.js"></script>
     <script src="JS/galeria.min.js"></script>
-    <script src="JS/efectoMouse.min.js"></script>
+    <script src="JS/efectoMouse.js"></script>
+    <script src="JS/scroll.js"></script>
 </body>
 </html>
