@@ -279,6 +279,11 @@ header nav ul li a{
 	font-size: 14px;
 }
 
+#formulario label span.obligatorio{
+	opacity: 0;
+	color: red;
+}
+
 #formulario input[type="checkbox"], #formulario input[type="radio"]{
 	display: none;
 }

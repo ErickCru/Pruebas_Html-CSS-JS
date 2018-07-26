@@ -309,18 +309,18 @@
         </h1>
 
         <div id="formulario" class="row">
-            <form action="" method="post">
+            <form method="post" action="formulario.php" onsubmit="return mf.validarFormulario()">
 
                 <h1>Ingrese sus datos</h1>
 
-                <label for="nombre">Ingrese su usuario: </label>
-                <input type="text" id="nombre" placeholder="Escriba su usurio con mínimo 2 caracteres, máximo 6 caracteres" requerid> 
+                <label for="nombre">Ingrese su usuario: <span class="obligatorio">*Campo Obligatorio</span></label>
+                <input type="text" id="nombre" class="validar" placeholder="Escriba su usuario con mínimo 2 caracteres, máximo 6 caracteres" requerid> 
 
-                <label for="password">Ingrese su contraseña: </label>
-                <input type="password" id="password" placeholder="Escriba su contraseña con mínimo 8 caracteres y debe incluir letras en mayúsculas, mínusculas y númeuro_symbol" requerid> 
+                <label for="password">Ingrese su contraseña: <span class="obligatorio">*Campo Obligatorio</span></label>
+                <input type="password" id="password" class="validar" placeholder="Escriba su contraseña con mínimo 8 caracteres y debe incluir letras en mayúsculas, mínusculas y números" maxlength="15" requerid> 
 
-                <label for="email">Ingrese su contraseña: </label>
-                <input type="email" id="email" placeholder="Escriba su correo correctamente" requerid> 
+                <label for="email">Ingrese su correo: <span class="obligatorio">*Campo Obligatorio</span></label>
+                <input type="email" id="email"  class="validar" placeholder="Escriba su correo correctamente" requerid> 
 
                 <label for="color">Elija su color</label>
                 <select  id="color">
@@ -361,6 +361,7 @@
                 <input type="checkbox" id="terminos">
                 <label for="terminos" class="box"><span></span><a href="#" target="_blank">Acepto términos y condiciones</a></label>
 
+                <label id="labelEnviar"></label>
                 <input type="submit" value="Enviar">
 
             </form>
@@ -372,5 +373,6 @@
     <script src="JS/galeria.min.js"></script>
     <script src="JS/efectoMouse.js"></script>
     <script src="JS/scroll.js"></script>
+    <script src="JS/formulario.js"></script>
 </body>
 </html>
