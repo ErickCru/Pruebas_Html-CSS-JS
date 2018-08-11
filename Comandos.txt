@@ -1,0 +1,16 @@
+Comandos
+
+Mostrar los log de forma reducida
+	git config --global alias.lg "log --oneline --decorate --all --graph"
+Mostrar el estado de forma mas corta
+	git config --global alias.s "status -s -b"
+Cambiar a la rama principal
+	git config --global alias.cambioM "checkout master"
+Camiar a una rama
+        git config --global alias.cambioR "checkout NombreRama"
+Hacer commit con mensaje (falta "Mensaje")
+	git config --global alias.agregar "commit -am"
+Crear y cambiar a rama (Falta nombre de rama)
+        git config --global alias.c "checkout -b"
+Eliminar rama (Falta nombre de rama)
+        git config --global alias.d "branch -d"
