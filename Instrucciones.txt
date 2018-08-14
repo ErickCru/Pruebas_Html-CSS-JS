@@ -1,0 +1,68 @@
+***************************************** NodeJs ***************************************************
+
+En linux, derivados de Debian (ultima versión 10..., Checar en su pagina).
+En windows Descargar e instalar.
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+Checar version nodeJs y npm
+    nodejs/npm -v
+
+Actualizar npm
+    npm i npm
+
+****************************************************************************************************
+
+
+***************************************** Angular***************************************************
+
+Instalar Angular (Solo una vez)
+    npm install -g @angular/cli  
+
+Crear un proyecto Angular
+    ng new my-app  
+
+Avanzar al proyecto
+    cd my-app
+
+Inicar el sevidor
+    ng serve --open   
+
+***************************************************************************************************
+
+
+*************************************** Typescript ************************************************
+
+Instalar Typescript (En una carpeta, cada vez que se requiera)
+    npm install -g typescript
+
+Compilar archivos Typescript
+tsc nombreArchivo.ts
+
+**************************************************************************************************
+
+
+***************************************** Vue *****************************************************
+
+Instalar vue (Solo una vez)
+    npm install -g vue-cli
+
+Crear un proyecto vue (webpack-simple = template, puede ser webpack, browserify, etc.  )
+    vue init webpack-simple my-project
+
+Avanzar al proyecto creado
+    cd my-project
+
+Instalar dependencias de Vue
+    npm install
+
+Inicar el sevidor
+    npm run dev
+
+Crear  
+    npm run build
+
+Instalar vuex 
+    npm i vuex
+
+**************************************************************************************************
