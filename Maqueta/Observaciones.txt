@@ -1,0 +1,3 @@
+En el index se modificara:
+* En el nav se elimina : cursos y registro
+* Los cursos se presentarán en recuadros, acomodados horizontalmente.
